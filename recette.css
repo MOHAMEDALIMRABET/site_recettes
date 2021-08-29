@@ -41,9 +41,9 @@ p.description{
 div.contenue
 {
 background-color: white;
-margin: 60px 10% 80px 10%;
-padding: 0px 30px 30px 30px;
-min-width: 350px;
+margin: 40px 8px 40px 8px;
+padding: 0px 8px 20px 8px;
+/*min-width: 350px;*/
 box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
 overflow: visible;
 }
@@ -60,7 +60,7 @@ div.separateur{
 }
 table.info td{
    text-align: center;
-   font-size: 13px;
+   font-size: 12px;
    vertical-align: top;
 }
 table.info th{
@@ -69,18 +69,19 @@ table.info th{
    vertical-align: bottom;
    padding: 0px 0px 10px 0px;
 }
+table.info{
+    position: absolute;
+    bottom: 0px; 
+    width: 100%; 
+    height: 50px;
+    color: white; 
+    background-color: #6C829DC0;
+    min-width: 150px;
+ }
 div.info{
    position: relative;
 }
-table.info{
-   position: absolute;
-   bottom: 0px; 
-   width: 100%; 
-   height: 70px;
-   color: white; 
-   background-color: #6C829DC0;
-   min-width: 150px;
-}
+
 img.info{
     display:block;
     max-height: 400px;
@@ -91,15 +92,14 @@ img.info{
 div.colonne1
 {
 display:inline-block;
-margin-right: 10%;
 }
 div.colonne{
-    width:45%;
+    width:100%;
     margin-top: 20px;
 }
 div.colonne2
 {
-float: right;
+/*float: right;*/
 }
 div.colonne h2{
 text-align: center;
@@ -145,3 +145,60 @@ table.preparation tr
 {
 height: 25px;
 }
+/* style pour ordinateur*/
+@media only screen and (min-width: 768px) {
+    div.contenue
+    {
+    min-width: 350px;
+    max-width: 650px;
+    margin: 60px 10% 80px 10%;
+    padding: 0px 30px 30px 30px;
+    }
+    table.info td{
+        font-size: 13px;
+     }
+     table.info th{
+        text-align: center;
+        font-size: 14px;
+        vertical-align: bottom;
+        padding: 0px 0px 10px 0px;
+     }
+     table.info{
+         position: absolute;
+         bottom: 0px; 
+         width: 100%; 
+         height: 70px;
+         color: white; 
+         background-color: #6C829DC0;
+         min-width: 150px;
+      }
+      div.colonne1
+      {
+      display:inline-block;
+      margin-right: 10%;
+      }
+      div.colonne{
+          width:45%;
+          margin-top: 20px;
+      }
+      div.colonne2
+      {
+      float: right;
+      }
+      div.colonne h2{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 15px;
+      border-bottom:  solid #6C829D 5px;
+      padding-bottom: 5px;
+      margin-bottom: -4px;
+      }
+  }
+  @media only screen and (min-width: 900px) {
+    div.contenue
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width: 645px;
+
+    }
